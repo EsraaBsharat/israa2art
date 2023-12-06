@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1" />
+	<link rel="shortcut icon" type="image/x-icon" href="./assets/images/icon.png">
+	<title>Esraa Bsharat</title>
+	<script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="bower_components/foundation-sites/dist/css/foundation.min.css">
+	<link rel="stylesheet" href="">
+	<script src="bower_components/foundation-sites/dist/js/foundation.min.js" charset="utf-8"></script>
+	<script src="bower_components/normalize-css/normalize.css" charset="utf-8"></script>
+	<script src="bower_components/typed.js/dist/typed.min.js" charset="utf-8"></script>
+	<script src="bower_components/jqcloud2/dist/jqcloud.min.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="bower_components/jqcloud2/dist/jqcloud.min.css">
+	<script src="bower_components/custombox/dist/custombox.min.js"></script>
+	<link href="bower_components/custombox/dist/custombox.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="assets/fonts/foundation-icons/foundation-icons.css">
+	<link rel="stylesheet" href="assets/styles/styles.css">
+	
+	
+</head>
+<body>
+	<div id="app" class="wrapper">
+
+		<!-- Satrt About me section -->
+		<section id="about">
+			<div class="row">
+				<div class="small-12 large-8 large-offset-2 columns text-center">
+					<div class="profile-photo" :style="image">
+					</div>
+					<div class="details">
+						<h2>Hi, I'm {{name}}. <br><span class="title">Artist</span><br> <span id="writing-text"><span></h2>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="small-12 column">
+					<div class="cta text-center">
+						<a class="my-button cta-button expand form-button" :href="whatsapp">Get In Touch</a>
+					</div>
+				</div>
+				<div class="small-12 column">
+					<div class="my-arrow-div text-center">
+						<a :href="facebook" target="_blank"><i class="fa fa-facebook fa-4x"></i></a>
+						<a :href="instagram" target="_blank"><i class="fa fa-instagram fa-4x"></i></a>
+						<!-- <a :href="github" target="_blank"><i class="fa fa-twitter fa-4x"></i></a> -->
+						<!-- <a :href="Linked" target="_blank"><i class="fa fa-linkedin fa-4x"></i></a> -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End About me section -->
+		<!-- Start Experience Section -->
+		<section id="experience">
+			<div class="row column">
+				<div class="small-12">
+					<!-- <h2 class="text-center">My Experience</h2> -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 medium-4 columns text-center experience-topics">
+					<i class="fa fa-briefcase"></i>
+					<h3>Work experience</h3>
+					<ul>
+						<li>Arts Teacher at Takamul Academy, Abu Dhabi. <span class="date">(2019-present)</span></li>
+						<li>Arts & Arabic Teacher at Jigsaw Nursery, Abu 
+							Dhabi. <span class="date">(01/2020-03/2020)</span></li>
+						<li>Procurement Office’s Assistant at ESDC(Engineering Company), Ramallah, Palestine. <span class="date">(2014-2016)</span></li>
+					</ul>
+				</div>
+				<div class="small-12 medium-5 columns text-center experience-topics">
+					<i class="fa fa-book"></i>
+					<h3>Education & Courses</h3>
+					<ul>
+						<li>Diploma of Education Certificate from Abu Dhabi University.<span class="date">(2019-present)</span></li>
+						<li>B.Sc. Major in Art, Minor Science Development, Al Quds University.<span
+								class="date">(2011-2014)</span></li>
+						<li>Training Course of (Workplace Success) (50 hrs.), Palestine.<span class="date">(Course)</span></li>
+						<li> Training for six months in Economic & Social Development Center of Palestine.
+							<span class="date">(Course)</span></li>
+						<li> Training course for 3 months of Graphic Designer, 
+							Palestine .<span class="date">(Course)</span></li>
+					
+					</ul>
+				</div>
+				<div class="small-12 medium-3 columns text-center experience-topics">
+					<i class="fa fa-paint-brush"></i>
+					<h3>Tools & Skills</h3>
+					<ul>
+						<li>Communication</li>
+						<li>Realistic drawing</li>
+						<li>Constructive drawing</li>
+						<li>Time management</li>
+						<li>Drawing from life</li>
+						<li>Computer skills</li>
+						<li>Composition</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!--End Experience Section -->
+		<!-- Start Join Section -->
+		<section id="join">
+			<div class="row column">
+				<div class="small-12">
+					<h2 class="text-center">Participation In the Art Exhibition, UAE </h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="slideshow-container">
+
+					<div class="mySlides fade">
+						<div class="numbertext" style="color: white;">1 / 6</div>
+						<img src="./assets/images/join.jpg" style="width:100%;
+						height: 500px;
+						object-fit: none;">
+					</div>
+					<div class="mySlides fade">
+						<div class="numbertext" style="color: white;">2 / 6</div>
+						<img src="./assets/images/join2.jpg" style=" width: 100%;
+					  height: 500px;
+					  object-fit: contain;
+					">
+					</div>
+					<div class="mySlides fade">
+						<div class="numbertext" style="color: white;">3 / 6</div>
+						<img src="./assets/images/join3.jpg" style=" width: 100%;
+					  height: 500px;
+					  object-fit: contain;
+					">
+					</div>
+					<div class="mySlides fade" >
+						<div class="numbertext" style="color: white;">4 / 6</div>
+						<img src="./assets/images/join4.jpg" style=" width: 100%;
+						height: 500px;
+						object-fit: contain;
+					  ">
+					</div>
+					<div class="mySlides fade">
+						<div class="numbertext" style="color: white;">5 / 6</div>
+						<img src="./assets/images/join5.jpg" style=" width: 100%;
+						height: 500px;
+						object-fit: contain;
+					  ">
+					</div>
+					<div class="mySlides fade">
+						<div class="numbertext" style="color: white;">6 / 6</div>
+						<img src="./assets/images/join1.jpg" style="width:100%;
+						height: 500px;
+						object-fit: contain;">
+					</div>
+					<a class="prev" style="color: white;" onclick="plusSlides(-1)">❮</a>
+					<a class="next" style="color: white;" onclick="plusSlides(1)">❯</a>
+				</div>
+				<br>
+
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+					<span class="dot" onclick="currentSlide(5)"></span>
+					<span class="dot" onclick="currentSlide(6)"></span>
+				</div>
+				
+			</div>
+		</section>
+		<!--End Join Section -->
+		<!--Start Work Section -->
+		<section id="work">
+			<h2 class="text-center">My Services</h2>
+			<div class="row">
+				<p class="text-center tag-line">Here are few of my Services.</p>
+			</div>
+			<div class="row work-row"> <!-- even slide 2 -->
+				<div class="small-12 medium-6 columns">
+					<div class="slideshow-container">
+
+						<div class="mySlides2 fade">
+							<div class="numbertext">1 / 17</div>
+							<img src="./assets/images/bag1.jpg" style="width:100% ;
+						  height: 500px;
+						  object-fit: contain;">
+						</div>
+						<div class="mySlides2 fade">
+							<div class="numbertext">2 / 17</div>
+							<img src="./assets/images/bag2.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;
+						">
+						</div>
+						<div class="mySlides2 fade">
+							<div class="numbertext">3 / 17</div>
+							<img src="./assets/images/bag3.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;
+						">
+						</div>
+						<div class="mySlides2 fade">
+							<div class="numbertext">4 / 17</div>
+							<img src="./assets/images/bag4.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides2 fade">
+							<div class="numbertext">5 / 17</div>
+							<img src="./assets/images/bag5.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides2 fade">
+							<div class="numbertext">6 / 17</div>
+							<img src="./assets/images/bag6.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides2 fade">
+							<div class="numbertext">7 / 17</div>
+							<img src="./assets/images/bag7.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						 <div class="mySlides2 fade">
+							<div class="numbertext">8 / 17</div>
+							<img src="./assets/images/bag8.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides2 fade">
+							<div class="numbertext">9 / 17</div>
+							<img src="./assets/images/bag9.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides2 fade">
+							<div class="numbertext">10 / 17</div>
+							<img src="./assets/images/bag10.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						 <div class="mySlides2 fade">
+							<div class="numbertext">11 / 17</div>
+							<img src="./assets/images/bag11.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides2 fade">
+							<div class="numbertext">12 / 17</div>
+							<img src="./assets/images/bag12.png" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides2 fade">
+							<div class="numbertext">13 / 17</div>
+							<img src="./assets/images/bag13.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides2 fade">
+							<div class="numbertext">14 / 17</div>
+							<img src="./assets/images/bag14.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides2 fade">
+							<div class="numbertext">15 / 17</div>
+							<img src="./assets/images/bag15.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides2 fade">
+							<div class="numbertext">16 / 17</div>
+							<img src="./assets/images/bag16.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides2 fade">
+							<div class="numbertext">17 / 17</div>
+							<img src="./assets/images/bag17.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div> 
+						<a class="prev" onclick="plusSlides2(-1)">❮</a>
+						<a class="next" onclick="plusSlides2(1)">❯</a>
+					</div>
+					<br>
+
+					<div style="text-align:center">
+						<span class="dot2" onclick="currentSlide2(1)"></span>
+						<span class="dot2" onclick="currentSlide2(2)"></span>
+						<span class="dot2" onclick="currentSlide2(3)"></span>
+						<span class="dot2" onclick="currentSlide2(4)"></span>
+						<span class="dot2" onclick="currentSlide2(5)"></span>
+						<span class="dot2" onclick="currentSlide2(6)"></span>
+						<span class="dot2" onclick="currentSlide2(7)"></span>
+						 <span class="dot2" onclick="currentSlide2(8)"></span>
+						<span class="dot2" onclick="currentSlide2(9)"></span>
+						<span class="dot2" onclick="currentSlide2(10)"></span>
+						<span class="dot2" onclick="currentSlide2(11)"></span>
+						<span class="dot2" onclick="currentSlide2(12)"></span>
+						<span class="dot2" onclick="currentSlide2(13)"></span>
+						<span class="dot2" onclick="currentSlide2(14)"></span>
+						<span class="dot2" onclick="currentSlide2(15)"></span>
+						<span class="dot2" onclick="currentSlide2(16)"></span>
+						<span class="dot2" onclick="currentSlide2(17)"></span>
+					</div>
+
+
+				</div>
+				<div class="small-12 medium-5 medium-offset-1 columns">
+					<div class="details details-ftm">
+						<h3>HandPainted Purses and Totebags</h3>
+						<!-- <p class="platform">Technolgies : MVVM, Java, Android Firebase, API's, Android SDK , Xml</p> -->
+						<p class="icons"><i
+							class="fa fa-shopping-bag" style="font-size: 2em;"></i><!--<i class="fi-tablet-portrait"></i><i class="fi-mobile"></i>-->
+						</p>
+						<p>Welcome to my collection of Hand Painted   - original
+							design, purses and tote bags. If you see something you
+							like, and it's sold, just let me know, I never do two
+							exactly the same, but am happy to make one just for you!
+							*using your purse or mine!*</p>
+						<a :href="instagram" target="_blank"
+							class="button round btn">View Instagram</a>
+							<a href="https://wa.me/971551005228?text=I'm%20interested%20in%20handpainted%20bag" target="_blank"
+							class="button round btn">Order Now</a>
+
+					</div>
+				</div>
+				
+			</div>
+			<hr>
+			<div class="row work-row"> <!-- odd slid 3 -->
+				<div class="small-12 medium-6 medium-push-6 columns">
+					<div class="slideshow-container">
+
+						<div class="mySlides3 fade">
+							<div class="numbertext">1 / 5</div>
+							<img src="./assets/images/phone1.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;">
+						</div>
+						<div class="mySlides3 fade">
+							<div class="numbertext">2 / 5</div>
+							<img src="./assets/images/phone3.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;
+						">
+						</div>
+						<div class="mySlides3 fade">
+							<div class="numbertext">3 / 5</div>
+							<img src="./assets/images/phone2.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;
+						">
+						</div>
+						<div class="mySlides3 fade">
+							<div class="numbertext">4 / 5</div>
+							<img src="./assets/images/phone4.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides3 fade">
+							<div class="numbertext">5 / 5</div>
+							<img src="./assets/images/phone5.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<!-- <div class="mySlides3 fade">
+							<div class="numbertext">6 / 18</div>
+							<img src="./assets/images/6.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides3 fade">
+							<div class="numbertext">7 / 18</div>
+							<img src="./assets/images/7.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides3 fade">
+							<div class="numbertext">8 / 18</div>
+							<img src="./assets/images/8.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides3 fade">
+							<div class="numbertext">9 / 18</div>
+							<img src="./assets/images/9.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides3 fade">
+							<div class="numbertext">10 / 18</div>
+							<img src="./assets/images/10.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides3 fade">
+							<div class="numbertext">11 / 18</div>
+							<img src="./assets/images/11.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides3 fade">
+							<div class="numbertext">12 / 18</div>
+							<img src="./assets/images/12.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides3 fade">
+							<div class="numbertext">13 / 18</div>
+							<img src="./assets/images/13.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+
+						<div class="mySlides3 fade">
+							<div class="numbertext">14 / 18</div>
+							<img src="./assets/images/14.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides3 fade">
+							<div class="numbertext">15 / 18</div>
+							<img src="./assets/images/15.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides3 fade">
+							<div class="numbertext">16 / 18</div>
+							<img src="./assets/images/16.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides3 fade">
+							<div class="numbertext">17 / 18</div>
+							<img src="./assets/images/17.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div>
+						<div class="mySlides3 fade">
+							<div class="numbertext">18 / 18</div>
+							<img src="./assets/images/18.jpg" style=" width: 100%;
+							height: 500px;
+							object-fit: contain;
+						  ">
+						</div> -->
+						<a class="prev" onclick="plusSlides3(-1)">❮</a>
+						<a class="next" onclick="plusSlides3(1)">❯</a>
+					</div>
+					<br>
+
+					<div style="text-align:center">
+						<span class="dot3" onclick="currentSlide3(1)"></span>
+						<span class="dot3" onclick="currentSlide3(2)"></span>
+						<span class="dot3" onclick="currentSlide3(3)"></span>
+						<span class="dot3" onclick="currentSlide3(4)"></span>
+						<span class="dot3" onclick="currentSlide3(5)"></span>
+						<!-- <span class="dot3" onclick="currentSlide3(6)"></span>
+						<span class="dot3" onclick="currentSlide3(7)"></span>
+						<span class="dot3" onclick="currentSlide3(8)"></span>
+						<span class="dot3" onclick="currentSlide3(9)"></span>
+						<span class="dot3" onclick="currentSlide3(10)"></span>
+						<span class="dot3" onclick="currentSlide3(11)"></span>
+						<span class="dot3" onclick="currentSlide3(12)"></span>
+						<span class="dot3" onclick="currentSlide3(13)"></span>
+						<span class="dot3" onclick="currentSlide3(14)"></span>
+						<span class="dot3" onclick="currentSlide3(15)"></span>
+						<span class="dot3" onclick="currentSlide3(16)"></span>
+						<span class="dot3" onclick="currentSlide3(17)"></span>
+						<span class="dot3" onclick="currentSlide3(18)"></span> -->
+					</div>
+
+				</div>
+				<div class="small-12 medium-5 medium-pull-7 columns">
+					<div class="details details-ftm">
+						<h3>CUSTOMIZING Phone Case</h3>
+						<!-- <p class="platform">Technolgies : Android SDK , Kotlin, Xml, Firebase, MVVM</p> -->
+						<p class="icons"><i
+								class="fa fa-mobile"></i><!--<i class="fi-tablet-portrait"></i><i class="fi-mobile"></i>-->
+						</p>
+						<p>Customizing your phone case is a great way to express your personal style and keep your device protected. Here are some of my work.</p>
+						<a :href="instagram" target="_blank"
+							class="button round btn">View Instagram</a>
+							<a href="https://wa.me/971551005228?text=I'm%20interested%20in%20customizing%20phone%20case" target="_blank"
+							class="button round btn">Order Now</a>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="row work-row"><!-- even slide 4 -->
+				<div class="small-12 medium-6 columns">
+					<div class="slideshow-container">
+
+						<div class="mySlides4 fade">
+							<div class="numbertext">1 / 7</div>
+							<img src="./assets/images/wallet1.jpg" style="width:100% ;
+						  height: 500px;
+						  object-fit: contain;">
+						</div>
+						<div class="mySlides4 fade">
+							<div class="numbertext">2 / 7</div>
+							<img src="./assets/images/wallet2.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;
+						">
+						</div>
+						<div class="mySlides4 fade">
+							<div class="numbertext">3 / 7</div>
+							<img src="./assets/images/wallet3.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;
+						">
+						</div>
+						<div class="mySlides4 fade">
+							<div class="numbertext">4 / 7</div>
+							<img src="./assets/images/wallet4.jpg" style="width:100% ;
+						  height: 500px;
+						  object-fit: contain;">
+						</div>
+						<div class="mySlides4 fade">
+							<div class="numbertext">5 / 7</div>
+							<img src="./assets/images/wallet5.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;
+						">
+						</div>
+						<div class="mySlides4 fade">
+							<div class="numbertext">6 / 7</div>
+							<img src="./assets/images/wallet6.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;
+						">
+						</div>
+						<div class="mySlides4 fade">
+							<div class="numbertext">7 / 7</div>
+							<img src="./assets/images/wallet7.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;
+						">
+						</div>
+						<a class="prev" onclick="plusSlides4(-1)">❮</a>
+						<a class="next" onclick="plusSlides4(1)">❯</a>
+					</div>
+					<br>
+					<div style="text-align:center">
+						<span class="dot4" onclick="currentSlide4(1)"></span>
+						<span class="dot4" onclick="currentSlide4(2)"></span>
+						<span class="dot4" onclick="currentSlide4(3)"></span>
+						<span class="dot4" onclick="currentSlide4(4)"></span>
+						<span class="dot4" onclick="currentSlide4(5)"></span>
+						<span class="dot4" onclick="currentSlide4(6)"></span>
+						<span class="dot4" onclick="currentSlide4(7)"></span>
+
+
+					</div>
+
+
+				</div>
+				<div class="small-12 medium-5 medium-offset-1 columns">
+					<div class="details details-ftm">
+						<h3>Leather Painted Wallet</h3>
+						<!-- <p class="platform">TECHNOLGIES : MVVM, JAVA, ANDROID FIREBASE, API'S, ANDROID SDK , XML</p> -->
+						<p class="icons"><i class="fa fa-money"></i></p>
+						<p>The design leather wallet is an example of artwork wallet that people enjoy using. We used special leather dye and vegetable tanned cowhide leather to create this design leather wallet. This genuine leather long billfold can be perfect gift for her with love theme. if you are looking for an original product as a gift an art lover ones, you can sure that she will love this hand painted purse.</p>
+						<a :href="instagram" target="_blank"
+							class="button round btn">View Instagram</a>
+							<a href="https://wa.me/971551005228?text=I'm%20interested%20in%20Leather%20Painted%20Wallet" target="_blank"
+							class="button round btn">Order Now</a>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="row work-row"> <!-- odd slider 5-->
+				<div class="small-12 medium-6 medium-push-6 columns">
+					<div class="slideshow-container">
+
+						<div class="mySlides5 fade">
+							<div class="numbertext">1 / 6</div>
+							<img src="./assets/images/course1.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;">
+						</div>
+						<div class="mySlides5 fade">
+							<div class="numbertext">2 / 6</div>
+							<img src="./assets/images/course2.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;">
+						</div>
+						<div class="mySlides5 fade">
+							<div class="numbertext">3 / 6</div>
+							<img src="./assets/images/course3.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;">
+						</div>
+						<div class="mySlides5 fade">
+							<div class="numbertext">4 / 6</div>
+							<img src="./assets/images/course4.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;">
+						</div>
+						<div class="mySlides5 fade">
+							<div class="numbertext">5 / 6</div>
+							<img src="./assets/images/course5.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;">
+						</div>
+						<div class="mySlides5 fade">
+							<div class="numbertext">6 / 6</div>
+							<img src="./assets/images/course6.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;">
+						</div>
+						
+
+
+						<a class="prev" onclick="plusSlides5(-1)">❮</a>
+						<a class="next" onclick="plusSlides5(1)">❯</a>
+					</div>
+					<br>
+					<div style="text-align:center">
+						<span class="dot5" onclick="currentSlide5(1)"></span>
+						<span class="dot5" onclick="currentSlide5(2)"></span>
+						<span class="dot5" onclick="currentSlide5(3)"></span>
+						<span class="dot5" onclick="currentSlide5(4)"></span>
+						<span class="dot5" onclick="currentSlide5(5)"></span>
+						<span class="dot5" onclick="currentSlide5(6)"></span>
+					</div>
+
+				</div>
+				<div class="small-12 medium-5 medium-pull-7 columns">
+					<div class="details details-ftm">
+						<h3>Draw Paint Course</h3>
+						<p class="platform"><b>Skill level:</b> Absolute beginner to intermediate painters.</p>
+						<p class="icons"><i
+								class="fa fa-paint-brush"></i><!--<i class="fi-tablet-portrait"></i><i class="fi-mobile"></i>-->
+						</p>
+						<p>Want to learn how to paint but have no idea where to start? This course will teach you all the fundamentals. It covers color, value, composition, how to start a painting, how to use your supplies, etc.</p>
+						<a :href="instagram" target="_blank"
+							class="button round btn">View Instagram</a>
+							<a href="https://wa.me/971551005228?text=I'm%20interested%20in%20Draw%20Paint%20Course" target="_blank"
+							class="button round btn">Order Now</a>
+
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="row work-row"><!-- even slide 6 -->
+				<div class="small-12 medium-6 columns">
+					<div class="slideshow-container">
+
+						<div class="mySlides6 fade">
+							<div class="numbertext">1 / 9</div>
+							<img src="./assets/images/join1.jpg" style="width:100% ;
+						  height: 500px;
+						  object-fit: contain;">
+						</div>
+						<div class="mySlides6 fade">
+							<div class="numbertext">2 / 9</div>
+							<img src="./assets/images/join2.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;
+						">
+						</div>
+						<div class="mySlides6 fade">
+							<div class="numbertext">3 / 9</div>
+							<img src="./assets/images/join3.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;
+						">
+						</div>
+						<div class="mySlides6 fade">
+							<div class="numbertext">4 / 9</div>
+							<img src="./assets/images/join4.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;
+						">
+						</div>
+						<div class="mySlides6 fade">
+							<div class="numbertext">5 / 9</div>
+							<img src="./assets/images/join5.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;
+						">
+						</div>
+						<div class="mySlides6 fade">
+							<div class="numbertext">6 / 9</div>
+							<img src="./assets/images/join6.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;
+						">
+						</div>
+						<div class="mySlides6 fade">
+							<div class="numbertext">7 / 9</div>
+							<img src="./assets/images/join7.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;
+						">
+						</div>
+						<div class="mySlides6 fade">
+							<div class="numbertext">8 / 9</div>
+							<img src="./assets/images/join8.jpg" style=" width: 100%;
+						  height: 500px;
+						  object-fit: contain;
+						">
+						</div>
+					
+					<div class="mySlides6 fade">
+						<div class="numbertext">9 / 9</div>
+						<img src="./assets/images/join9.jpg" style=" width: 100%;
+					  height: 500px;
+					  object-fit: contain;
+					">
+					</div>
+					
+						<a class="prev" onclick="plusSlides6(-1)">❮</a>
+						<a class="next" onclick="plusSlides6(1)">❯</a>
+					</div>
+					<br>
+					<div style="text-align:center">
+						<span class="dot6" onclick="currentSlide6(1)"></span>
+						<span class="dot6" onclick="currentSlide6(2)"></span>
+						<span class="dot6" onclick="currentSlide6(3)"></span>
+						<span class="dot6" onclick="currentSlide6(4)"></span>
+						<span class="dot6" onclick="currentSlide6(5)"></span>
+						<span class="dot6" onclick="currentSlide6(6)"></span>
+						<span class="dot6" onclick="currentSlide6(7)"></span>
+						<span class="dot6" onclick="currentSlide6(8)"></span>
+						<span class="dot6" onclick="currentSlide6(9)"></span>
+					</div>
+
+
+				</div>
+				<div class="small-12 medium-5 medium-offset-1 columns">
+					<div class="details details-ftm">
+						<h3>Art Paint for Home Decor</h3>
+						<!-- <p class="platform">TECHNOLGIES : MVVM, JAVA, ANDROID FIREBASE, API'S, ANDROID SDK , XML</p> -->
+						<p class="icons"><i class="fa fa-picture-o"></i></p>
+						<p>Elevate your home decor to extraordinary heights with our exquisite Eclectic Gallery Set. pure hand-painted oil painting, simple and beautiful living room handcrafted decorative painting</p>
+						<a :href="instagram" target="_blank"
+							class="button round btn">View Instagram</a>
+							<a href="https://wa.me/971551005228?text=I'm%20interested%20in%20Paint%20home%20decor" target="_blank"
+							class="button round btn">Order Now</a>
+
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		<section id="footer-cta">
+			<h2 class="text-center">Wanna work with me?</h2>
+			<p></p>
+			<div class="row text-center">
+				<div class="small-12 medium-8 medium-offset-2 columns">
+					<p class="text-center">I'm currently available for work.</p>
+				</div>
+				<div class="small-12 columns" id="startButtonDiv">
+					<a class="my-button form-button" :href="whatsapp">Start Now</a>
+				</div>
+			</div>
+		</section>
+
+		<footer id="footer">
+			<div class="row text-center">
+				<div class="small-12 medium-6 medium-offset-3 columns">
+					<p id="logo">EB</p>
+					<p id="copyright">Copyright &copy; 2024 | Esraa Bsharat</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script>
+		var vm = new Vue({
+			el: "#app",
+			data: {
+				name: "Esraa Bsharat",
+				image: "background-image: url(assets/images/esraaProfile.jpg);",
+				email: "",
+				Linked: "",
+				twitter: "",
+				facebook: "https://www.facebook.com/israa2art?mibextid=LQQJ4d",
+				instagram: "https://instagram.com/israa2art?igshid=MWJpYnlsNXZ2a3NzYw==",
+				whatsapp: "https://wa.me/971551005228?text=I'm%20interested%20in%20your%20services",
+
+
+			}
+
+		});
+	</script>
+	<script src="assets/scripts/app.js" charset="utf-8"></script>
+</body>
+</html>
